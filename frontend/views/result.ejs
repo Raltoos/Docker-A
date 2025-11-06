@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Result</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      width: 90%;
+    }
+
+    h1 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    pre {
+      background: #f0f0f0;
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 1rem;
+      text-decoration: none;
+      background: #007bff;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    a:hover {
+      background: #0056b3;
+    }
+
+    .link-container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Backend Response</h1>
+    <pre><%= JSON.stringify(result, null, 2) %></pre>
+    <div class="link-container">
+      <a href="/">Back</a>
+    </div>
+  </div>
+</body>
+</html>
